@@ -1,22 +1,51 @@
-students = ['Jim', 'Marcel', 'Sean', 'Tad', 'Harmony'];
+// for (let i = 0; i <= 15; i++) {
+//   console.log(i)
+// }
 
-// console.log(students.length); //5
-// console.log(students[3])
-// console.log(students[students.length - 1]) //Tad
+// const functionFor = () => {
+//   for (let i = 0; i <= 15; i++) 
+//       console.log(i)
+// }
 
-students[0] = 'Greg'; //repaces Jim w/ Johnny
-// console.log(students);
+// functionFor()
 
-const valuePrinter = (array, index) => {
-  return array[index];
+// ************** ARRAYS WITH LOOPS *************
+
+// const ec14Instructors = ['Aja', 'Trinity', 'Dr. T', 'Discussion Tickets']
+
+// for (let i = 0; i < ec14Instructors.length; i++) {
+//   console.log(ec14Instructors[i])
+// }
+
+// ************** ARRAYS, LOOPS, FUNCTIONS *************
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo'];
+
+// const colorLoop = () => {
+//   let domString ='';
+
+// for (let i = 0; i < colors.length; i++ {     //need to fix
+//   domString += `<h1>${colors[i]}</h1>`
+// }
+
+//   console.log(domString);
+// }
+
+// colorLoop();
+
+const instructors = [
+  {first: 'Trinity', last: 'Christiana'},
+  {first: 'Aja', last: 'Washington'},
+  {first: 'Teresa', last: 'Vasquez'},
+];
+
+const nameLoop = () => {
+  let domString = '';
+
+  for (let i = 0; i < instructors.length; i++) {
+    domString += `<h1>${instructors[i].first} ${instructors[i].last}</h1>`;
+  }
+
+  console.log(domString)
 }
 
-// console.log(valuePrinter(students, 4));  //you can return using a variable
-// console.log(valuePrinter([1,2,3,4,5], 2)) //you can return using the array itself
-
-// console.log(valuePrinter(students, 2))
-
-// const nameGreg = (array, index) => {
-//   return array.includes("Greg");    // make sure to use agrument "array" for reuseability 
-// }
-// console.log(nameGreg(students))
+nameLoop();
